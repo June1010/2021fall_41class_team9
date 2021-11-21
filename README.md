@@ -16,5 +16,5 @@
 | :--------------------------------------------------------------------------------------------------------: | :-------: | :---: |
 |       [Proposal](https://github.com/skkuse/2021fall_41class_team9/blob/main/docs/Proposal_TEAM9.pdf)       | `Week 4`  |   O   |
 | [Requirement Specification](https://github.com/skkuse/2021fall_41class_team9/blob/main/docs/SRS_TEAM9.pdf) | `Week 8`  |   O   |
-|                                            Design specification                                            | `Week 11` |   X   |
+|   [Design specification](https://github.com/skkuse/2021fall_41class_team9/blob/main/docs/SDD_TEAM9.pdf)    | `Week 11` |   O   |
 |                                               Implementation                                               | `Week 14` |   X   |
