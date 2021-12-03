@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: door Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 0a641c9dec7065c4b9e864e54de39e15,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export animator\r\n    \r\n    __instance_0:
+    %UnityEngineAnimator, null\r\n    __name_0: %SystemString, null\r\n    __value_0:
+    %SystemBoolean, null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_1:
+    %UnityEngineAnimator, null\r\n    __name_1: %SystemString, null\r\n    __instance_2:
+    %UnityEngineAnimator, null\r\n    __name_2: %SystemString, null\r\n    __value_1:
+    %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __instance_3:
+    %UnityEngineAnimator, null\r\n    __name_3: %SystemString, null\r\n    __instance_4:
+    %UnityEngineAnimator, null\r\n    __name_4: %SystemString, null\r\n    __value_2:
+    %SystemBoolean, null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __instance_5:
+    %UnityEngineAnimator, null\r\n    __name_5: %SystemString, null\r\n    animator:
+    %UnityEngineAnimator, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
+    _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH, animator\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, animator\r\n        PUSH,
+    __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH, __name_1\r\n       
+    PUSH, __Boolean_0\r\n        EXTERN, \"UnityEngineAnimator.__GetBool__SystemString__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        PUSH, __value_0\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __name_0\r\n        PUSH, __value_0\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n    \r\n    _interact:\r\n   
+    \r\n        PUSH, animator\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, animator\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH,
+    __instance_3\r\n        PUSH, __name_3\r\n        PUSH, __Boolean_1\r\n       
+    EXTERN, \"UnityEngineAnimator.__GetBool__SystemString__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        PUSH, __value_1\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __name_2\r\n        PUSH, __value_1\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onCollisionEnter\r\n    \r\n    _onCollisionEnter:\r\n   
+    \r\n        PUSH, animator\r\n        PUSH, __instance_4\r\n        COPY\r\n       
+    PUSH, animator\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH,
+    __instance_5\r\n        PUSH, __name_5\r\n        PUSH, __Boolean_2\r\n       
+    EXTERN, \"UnityEngineAnimator.__GetBool__SystemString__SystemBoolean\"\r\n       
+    PUSH, __Boolean_2\r\n        PUSH, __value_2\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
+    PUSH, __instance_4\r\n        PUSH, __name_4\r\n        PUSH, __value_2\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_UnityEngineAnimator
+      uid: d6464ccd-d31d-42f2-a37c-a6eb5c2d5edb
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|animator
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Event_OnTriggerEnter
+      uid: 1f0dd356-0db3-4d9c-8abf-44ccc912ba61
+      position: {x: -696.75, y: -270.10007}
+      nodeUIDs: []
+      flowUIDs:
+      - b81c51af-9f9c-4bcc-ab82-61a958f6919a
+      nodeValues: []
+    - fullName: Get_Variable
+      uid: 47004c50-ba79-41e4-a7f5-a0502a7f7e1a
+      position: {x: -524.1, y: -95.90006}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d6464ccd-d31d-42f2-a37c-a6eb5c2d5edb
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineAnimator.__GetBool__SystemString__SystemBoolean
+      uid: 782bdfba-45a9-4364-b3ca-64b411eb4842
+      position: {x: -172.19998, y: -51.75003}
+      nodeUIDs:
+      - 47004c50-ba79-41e4-a7f5-a0502a7f7e1a|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|open
+    - fullName: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+      uid: b35869fd-17f9-461a-8b76-8c84ff58cf0e
+      position: {x: -226.1, y: -142.30008}
+      nodeUIDs:
+      - 782bdfba-45a9-4364-b3ca-64b411eb4842|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid
+      uid: b81c51af-9f9c-4bcc-ab82-61a958f6919a
+      position: {x: -192.84996, y: -395.2001}
+      nodeUIDs:
+      - 47004c50-ba79-41e4-a7f5-a0502a7f7e1a|0
+      - 
+      - b35869fd-17f9-461a-8b76-8c84ff58cf0e|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|open
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Event_Interact
+      uid: d9f5043d-f4df-466c-91ed-f6d1eba51ea4
+      position: {x: -518.6, y: -359.98007}
+      nodeUIDs: []
+      flowUIDs:
+      - b81c51af-9f9c-4bcc-ab82-61a958f6919a
+      nodeValues: []
+    - fullName: Event_OnCollisionEnter
+      uid: 1dbc2c85-6d74-4a2e-86a0-41d1aa957d29
+      position: {x: -702, y: -503}
+      nodeUIDs: []
+      flowUIDs:
+      - b81c51af-9f9c-4bcc-ab82-61a958f6919a
+      nodeValues: []
+    updateOrder: 0
+  graphElementData:
+  - type: 5
+    uid: 051bac1e-e607-400a-992e-c65707dc1d15
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":45.0,"y":31.0,"width":217.0,"height":149.0}}'
+  - type: 4
+    uid: 742f83c8-eb0a-4be2-a602-290ccd54f4bc
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":915.0,"y":60.0,"width":200.0,"height":100.0}}'
+  viewTransform:
+    position: {x: 1023, y: 646}
+    scale: 1
+  version: 1.0.0
+  showAssembly: 0
