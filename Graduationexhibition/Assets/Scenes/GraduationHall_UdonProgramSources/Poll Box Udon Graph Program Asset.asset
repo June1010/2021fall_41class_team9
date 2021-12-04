@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: Poll Box Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: dc81090b9954e524395fbd5dd98f02df,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export Self\r\n    \r\n    __obj_0: %UnityEngineObject,
+    null\r\n    __instance_0: %UnityEngineCollider, null\r\n    onTriggerEnterOther:
+    %UnityEngineCollider, null\r\n    Self: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH,
+    onTriggerEnterOther\r\n        PUSH, __instance_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __obj_0\r\n        EXTERN, \"UnityEngineCollider.__get_gameObject__UnityEngineGameObject\"\r\n       
+    PUSH, __obj_0\r\n        EXTERN, \"UnityEngineObject.__Destroy__UnityEngineObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Event_OnTriggerEnter
+      uid: 9b70fa18-bbd7-431d-8c12-ece4bf5bee75
+      position: {x: 339, y: 145}
+      nodeUIDs: []
+      flowUIDs:
+      - 3729b334-398b-4e8a-a814-529b1c6d1822
+      nodeValues: []
+    - fullName: Variable_UnityEngineGameObject
+      uid: 8ff8dac3-12cc-4c71-9365-6cbe9b84da64
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Self
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: UnityEngineCollider.__get_gameObject__UnityEngineGameObject
+      uid: a65998b3-b699-456d-9d11-bd1800e2d669
+      position: {x: 412.03253, y: 260.8075}
+      nodeUIDs:
+      - 9b70fa18-bbd7-431d-8c12-ece4bf5bee75|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineObject.__Destroy__UnityEngineObject__SystemVoid
+      uid: 3729b334-398b-4e8a-a814-529b1c6d1822
+      position: {x: 698.21, y: 144.3225}
+      nodeUIDs:
+      - a65998b3-b699-456d-9d11-bd1800e2d669|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData:
+  - type: 5
+    uid: 70c00b43-4124-4d4b-8664-239923cd0c0c
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":200.0,"height":150.0}}'
+  viewTransform:
+    position: {x: -196, y: -78}
+    scale: 1.3225
+  version: 1.0.0
+  showAssembly: 0
